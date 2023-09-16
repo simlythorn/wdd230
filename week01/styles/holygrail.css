@@ -1,0 +1,57 @@
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: black;
+    --secondary-color: lightpink;
+    --accent1-color: lightblue;
+    --accent2-color: coral;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Rock Salt";
+    --paragraph-font: Roboto, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: black;  /* headlines on a white background */ 
+    --headline-color-on-color: yellow; /* headlines on a colored background */ 
+    --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: wheat; /* paragraph text on a colored background */ 
+    --paragraph-background-color: yellow;
+  }
+  body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / 300px 1fr auto;
+    color: black;
+  }
+    
+  header {
+    background: lightpink;
+    padding: 2rem;
+    grid-column: 1 / 4;
+  }
+    
+  .left-sidebar {
+    background: lightblue;
+    grid-column: 1 / 2;
+  }
+    
+  main {
+    background: coral;
+    grid-column: 2 / 3;
+  }
+    
+  .right-sidebar {
+    background: yellow;
+    grid-column: 3 / 4;
+  }
+    
+  footer {
+    background: wheat;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+  }
+    
+  .left-sidebar,
+  .right-sidebar {
+    padding: 1rem;
+  }   
