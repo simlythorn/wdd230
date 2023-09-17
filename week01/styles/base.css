@@ -8,7 +8,6 @@ body {
 	font-family: "Sansita", sans-serif;
 }
 
-/* mobile **************************/
 header {
 	background-color: #bbb;
 	display: flex;
@@ -29,12 +28,33 @@ h1 {
 }
 h2 {
     padding: 50px;
+    text-align: center;
 }
 .card1 h3, .card2 h3{
     background: darkcyan;
     padding: 30px;
     text-align: center;
 }
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    grid-template-areas: 
+      "card1"
+      "card2";
+  }
+  
+  .card1 {
+    grid-area: card1;
+    width: 400px; height: 200px; background-color: rgba(0, 0, 0, 0.5); 
+    
+  }
+  
+  .card2 {
+    grid-area: card2;
+    width: 400px; height: 200px; background-color: rgba(0, 0, 0, 0.5); 
+  }
 
 p {
     padding-left: 50px;
@@ -75,7 +95,7 @@ footer {
     padding: 30px;
 }
 footer img {
-    margin-left: 350px;
+    margin-left: 330px;
     position: relative;
     top: -30px;
 }
